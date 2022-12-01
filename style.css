@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    transition: all .3s ease;
+    background-color: var(--bodybg);
+    color: var(--black);
+}
+
+img{
+    width: auto;
+    max-width: 100%;
+}
+
+:root{
+    --gradient: linear-gradient(90deg, rgb(253,196,104,1), rgb(223,73,150,1));
+    --limeGreen: hsl(163, 72%, 41%);
+    --brightRed: hsl(356, 69%, 56%);
+
+    --bodybg: rgb(255, 255, 255);
+    --black: hsl(0, 0, 0);
+    
+    --VeryDarkBluebg: hsl(230, 17%, 14%);
+    --VeryDarkBlue: hsl(232, 19%, 15%);
+    --DarkDesaturatedBlue: hsl(228, 28%, 20%);
+    --DesaturatedBlue: hsl(228, 34%, 66%);
+    
+    
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --LightGrayishBlue: hsl(227, 47%, 96%);
+    --DarkGrayishBlue: hsl(228, 12%, 44%);
+    --VeryDarkBlue: hsl(230, 17%, 14%);
+
+    --dashboardhover: hsl(225, 28%, 89%);
+    
+}
+
+
+.darktheme{
+    --LightGrayishBlue: hsl(228, 28%, 20%);
+    --DarkGrayishBlue: hsl(228, 34%, 66%);
+    --black: rgb(255, 255, 255);
+    --bodybg: hsl(230, 17%, 14%);
+    --dashboardhover: hsl(230, 26%, 28%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.margintb{
+    margin: 1rem 0 1rem 0;
+}
+
+
+.maincontainer1{
+    margin: 2.6rem;
+    margin-top: 2.6rem;
+}
+
+
+
+
+
+.dashboard{
+    padding-bottom: 2.1rem;
+    border-bottom: .1rem solid var(--VeryDarkBlue);
+}
+
+.dashboard h1{
+    font-size: 2.6rem;
+}
+
+.dashboard p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--DarkGrayishBlue);
+    margin-top: .6rem;
+}
+
+
+
+
+.darkmode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 4rem 0;
+    overflow: none;
+}
+
+.darkmode p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--DarkGrayishBlue);
+}
+
+.darkmode input{
+    display: none;
+}
+
+.darkmode label{
+    display: block;
+    position: relative;
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: hsl(230, 22%, 74%);
+    transition: .6s ease;
+    margin-left: auto;
+    transition: all .2s ease-in-out;
+}
+
+.darkmode label:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    height: 85%;
+    width: 45%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+}
+
+.darkmode input:Checked + label{
+    background-image: linear-gradient(90deg, rgb(55, 143, 230, 1), rgb(62, 218, 130, 1));
+    transition: all .2s ease-in-out;
+ }
+
+.darkmode input:checked + label:before{
+    left: 51%;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+.dashboard1, .dashboard2, .dashboard3, .dashboard4{
+    text-align: center;
+    background-color: var(--LightGrayishBlue);
+    padding: 3.1rem 0 1.3rem 0;
+    border-top: .45rem solid;
+    border-radius: .5rem;
+}
+
+.dashboard1{
+    border-color: hsl(208, 92%, 53%);
+}
+
+.dashboard2{
+    border-color: hsl(203, 89%, 53%);
+}
+
+.dashboard3{
+    border-image: var(--gradient);
+}
+
+
+.dashboard4{
+    border-color: hsl(348, 97%, 39%);
+}
+
+
+
+.dashboard1:hover, .dashboard2:hover, .dashboard3:hover, .dashboard4:hover{
+    background-color: var(--dashboardhover);
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+
+
+
+.socials{
+    display: flex;
+    gap: .6rem;
+    justify-content: center;
+    margin: 0 0 1.6rem 0;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--DarkGrayishBlue);
+}
+
+.dashboard1 h1, .dashboard2 h1, .dashboard3 h1, .dashboard4 h1{
+    font-size: 6rem;
+}
+
+.follower{
+    font-size: 1.3rem;
+    letter-spacing: .31rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.followercount{
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+    align-items: center;
+    margin: 2.1rem 0 1rem 0;
+}
+
+.followercount p{
+    color: hsl(163, 72%, 41%);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.dashboard4 .followercount p{
+    color: var(--brightRed);
+}
+
+
+
+
+
+
+
+
+
+
+
+.maincontainer2{
+    margin: 2.6rem;
+    margin-top: 4.6rem;
+}
+
+
+.overview h2{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--DarkGrayishBlue);
+}
+
+.overview1, .overview2, .overview3, .overview4, .overview5, .overview6, .overview7, .overview8{
+    background-color: var(--LightGrayishBlue);
+    border-radius: .5rem;
+}
+
+.overview1:hover, .overview2:hover, .overview3:hover, .overview4:hover, .overview5:hover, .overview6:hover, .overview7:hover, .overview8:hover{
+    background-color: var(--dashboardhover);
+    transition: all .3s ease;
+}
+
+
+.div1, .div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.6rem 2rem 2.6rem;
+}
+
+.div2-1{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+
+
+
+.div1 p{
+    font-size: 1.3rem;
+    color: var(--DarkGrayishBlue);
+    font-weight: 700;
+}
+
+.div2 h2{
+    font-size: 2.6rem;
+}
+
+.div2-1 p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--limeGreen);
+}
+
+.overview2 .div2-1 p, .overview7 .div2-1 p, .overview8 .div2-1 p{
+    color: var(--brightRed);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    
+    .dashboardtoggle{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        margin-bottom: 3.1rem;
+    }
+
+    .dashboard{
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .darkmode{
+        justify-content: flex-end;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .darkmode label{
+        margin: 0;
+    }
+
+    .overview{
+        margin-bottom: 1.6rem;
+    }
+
+    .alldashboards, .alloverviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 2rem;
+    }
+
+    .dashboard1, .dashboard2, .dashboard3, .dashboard4, .overview1, .overview2, .overview3, .overview4, .overview5, .overview6, .overview7, .overview8 {
+        margin: 0;
+    }
+
+
+}
+
+
+
+@media (min-width: 800px){
+
+    .alldashboards, .alloverviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 2rem;
+    }
+
+}
+
+
+
+@media (min-width: 1000px){
+
+    .alldashboards, .alloverviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+}
+
+
