@@ -16,3 +16,6 @@ toggle.addEventListener("click", ()=> {
         whitetext[5].style.color = "white"
     }
 })
+
+
+

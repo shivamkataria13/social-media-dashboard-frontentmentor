@@ -162,8 +162,8 @@ img{
     text-align: center;
     background-color: var(--LightGrayishBlue);
     padding: 3.1rem 0 1.3rem 0;
-    border-top: .45rem solid;
-    border-radius: .5rem;
+    border-top: .4rem solid;
+    border-radius: .3rem;
 }
 
 .dashboard1{
@@ -175,7 +175,19 @@ img{
 }
 
 .dashboard3{
-    border-image: var(--gradient);
+    border: none;
+    position: relative;
+}
+
+.dashboard3-bg{
+    position: absolute;
+    top: 0rem;
+    border-top: .45rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: .45rem;
+    width: 100%;
+    background: var(--gradient);
 }
 
 
